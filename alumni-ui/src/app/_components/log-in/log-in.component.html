@@ -1,0 +1,18 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="box">
+        <mat-card-header>
+            <mat-card-title style="color: #4051B5;">Log In</mat-card-title>
+        </mat-card-header>
+        <form class="example-form" [formGroup]="loginForm" (ngSubmit)="login(loginForm)">
+            <mat-card-content>
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Email Id" formControlName="email">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Password" type="password" formControlName="password">
+                </mat-form-field>
+            </mat-card-content>
+            <button mat-raised-button color="primary" class="btn-block">Log In</button>
+        </form>
+    </mat-card>
+</div>

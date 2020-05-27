@@ -1,0 +1,23 @@
+.example-card {
+    max-width: 400px;
+}
+
+.mat-card-wrapper {
+    margin-top: 80px;
+}
+
+.example-header-image {
+    background-image: url('../../../assets/pf.jpg');
+    background-size: cover;
+    align-items: center;
+}
+
+.header {
+    color: #555555;
+    font-weight: bold;
+    margin-block-end: 0;
+}
+
+.body {
+    margin-block-start: 0;
+}

@@ -1,0 +1,17 @@
+<mat-toolbar class="app-header" color="primary">
+    <div>
+        <a class="logo">Alumni</a>
+    </div>
+    <span class="nav-tool-items">
+      <a mat-button style="color: white;" routerLink="login" class="nav-item" *ngIf="!allService.loginStatus" routerLinkActive="active">Log In</a>
+      <a mat-button  mat-raised-button routerLink="register" *ngIf="!allService.loginStatus" routerLinkActive="active">Register</a>
+      <a  *ngIf="allService.loginStatus" style="color: white;">Hello!</a>
+      <a mat-button style="color: white;" routerLink="directory" class="nav-item" *ngIf="allService.loginStatus" routerLinkActive="active">Directory</a>
+      <a mat-button style="color: white;" routerLink="events" class="nav-item" *ngIf="allService.loginStatus" routerLinkActive="active">Events</a>
+      <a mat-button style="color: white;" routerLink="jobpostings" class="nav-item" *ngIf="allService.loginStatus" routerLinkActive="active">Job Postings</a>
+      <a mat-button style="color: white;" routerLink="profile" class="nav-item" *ngIf="allService.loginStatus" routerLinkActive="active">My Profile</a>
+
+      <a mat-button style="color: white;"
+      (click)="logout()" *ngIf="allService.loginStatus" routerLinkActive="active">Logout</a>
+    </span>
+</mat-toolbar>
